@@ -10,8 +10,12 @@ Original file is located at
 from turtle import *
 from time import sleep
 bgcolor("black")
+#Creates two Turtle objects and stores them in a list t.
 t=[Turtle(),Turtle()]
+
+#Sets the pen width, color, shape, and speed of the turtles using various methods like width(), color(), shape(), speed(), etc.
 x = 6
+#Lifts up the pen (pu()) and moves each turtle to a starting position (fd() and seth() methods).
 colors=["red","aqua","blue"]
 for index, i in enumerate(t):
   i.speed(0)
@@ -26,10 +30,16 @@ for index, i in enumerate(t):
   i.pd()
 t[0].pu()
 
+#Sets the delay to 0 using the delay() method and the speed to 0 using the speed() method.
 delay(0)
 speed(0)
+#Hides the turtle using the ht() method and sleeps for 4 seconds using the sleep() method.
 ht()
 sleep(4)
+#Loops over the colors list and sets the pen color using the color() method.
+#Loops over 360 degrees and moves the first turtle forward by x pixels and turns left by 1 degree using the fd() and lt() methods.
+#Lifts up the pen (pu()), moves to the first turtle's position (goto() method), puts the pen down (pd()), moves the second turtle forward by 2*x pixels and turns left by 2 degrees using the fd() and lt() methods.
+#Moves to the second turtle's position (goto() method) and repeats the loop until all degrees are covered.
 for i in colors:
   color(i)
   for i in range(360):
@@ -41,4 +51,6 @@ for i in colors:
     t[1].fd(2 * x)
     t[1].lt(2)
     goto(t[1].pos())
+
+#Ends the turtle graphics using the done() method.    
 done()
