@@ -9,7 +9,7 @@ clock_radius = 400
 pygame.init()
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Analog Clock")
+pygame.display.set_caption("Analog Clock View")
 clock = pygame.time.Clock()
 FPS = 60
 
