@@ -13,4 +13,4 @@ qr.add_data(data)
 img = qr.make_image()
 
 # Save the barcode image
-img.save("barcode.png")
+img.save("barcode2.png")
