@@ -18,4 +18,4 @@ def generate_barcode(code, filename):
     barcode.save(filename)
 
 # Generate a barcode with code "123456789012"
-generate_barcode('123456789012', 'barcode.png')
+generate_barcode('0715656710', 'barcode1.png')
